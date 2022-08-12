@@ -609,10 +609,6 @@ video {
   right: 0.25rem;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -761,20 +757,12 @@ video {
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/headerImage\.avif\)\] {
-  background-image: url(./headerImage.avif);
-}
-
-.bg-\[url\(\'\'\.\/headerImage\.avif\)\] {
-  background-image: url(''./headerImage.avif);
+.bg-\[url\(\'\.\.\/headerImage\.avif\'\)\] {
+  background-image: url('../headerImage.avif');
 }
 
 .bg-\[url\(\'\.\/headerImage\.avif\'\)\] {
   background-image: url('./headerImage.avif');
-}
-
-.bg-\[url\(\'\'\.\/headerImage\.avif\)\'\'\] {
-  background-image: url(''./headerImage.avif)'';
 }
 
 .object-cover {
@@ -886,7 +874,7 @@ body{
 }
 
 .hero{
-  background-image: url("./headerImage.avif");
+  /* background-image: url("./headerImage.avif"); */
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
   background-size: cover;
