@@ -1,0 +1,25 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: url("./headerImage.avif");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    
+}
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+.show{
+    display: inline-block;
+}
+.hide{
+    display: none;
+}

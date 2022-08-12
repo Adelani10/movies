@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+    <link rel="stylesheet" href="./public/main.css">
+    <title>Save Movies To Watch Later</title>
+</head>
+<body>
+    
+    <div class="container mx-auto flex flex-col border h-auto my-2 rounded-md border-sky-200 w-[95%] md:w-1/2 font-serif">
+
+        <div class="hero bg-[url('./headerImage.avif')] rounded-t-md relative flex justify-around items-center h-[30vh] w-full">
+                <h1 class="text-whitesmoke text-2xl md:text-4xl font-bold">
+                    Find your Film
+                </h1>
+                <a href="watchlist.html" class="font-bold text-sky-100 text-sm hover:text-sky-400">
+                    My Watchlist
+                </a>
+                <form class="px-2 absolute z-50 -bottom-5 box-border left-1 right-1">
+                    <input type="text"
+                        class="h-10 rounded-l-lg fontAwesome input pl-3 w-[64%] border search bg-[url('/imgs/search icon.jpg')]"
+                        placeholder="&#xF002; Search for a movie">
+                    <button type="submit" class="w-[34%] h-10 btn px-2 rounded-r-lg border tracking-widest bg-sky-200 hover:bg-sky-500 hover:text-whitesmoke">Search</button>
+                </form>
+        </div>
+        
+        <div class="pt-5 relative min-h-screen movie-option-space flex flex-col items-center">
+                <div class="flex movie-space-placeholder flex-col absolute top-[50%] translate-y-[-50%] items-center ">
+                    <img src="./imgs/empty icon.jpg" alt="">
+                    <p class="text-2xl text-neutral-200 tracking-widest">
+                        Start Exploring
+                    </p>
+                </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
