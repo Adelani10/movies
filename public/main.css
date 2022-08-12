@@ -757,12 +757,8 @@ video {
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/headerImage\.avif\'\)\] {
-  background-image: url('../headerImage.avif');
-}
-
-.bg-\[url\(\'\.\/headerImage\.avif\'\)\] {
-  background-image: url('./headerImage.avif');
+.bg-\[url\(\'\.\/headerImage\.jpg\'\)\] {
+  background-image: url('./headerImage.jpg');
 }
 
 .object-cover {
@@ -874,8 +870,7 @@ body{
 }
 
 .hero{
-  /* background-image: url("./headerImage.avif"); */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center 20%;
