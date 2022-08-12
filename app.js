@@ -14,11 +14,11 @@ btn.addEventListener("click", function(e){
     const element = document.createElement("div")
     element.classList.add("flex", "flex-col", "items-center")
     if (value) {
-        fetch(`http://www.omdbapi.com/?s=${value}&apikey=4ccd412e`)
+        fetch(`https://www.omdbapi.com/?s=${value}&apikey=4ccd412e`)
         .then(res=> res.json())
         .then(data=> {
             for(let item of data.Search){ 
-                fetch(`http://www.omdbapi.com/?i=${item.imdbID}&apikey=4ccd412e`)
+                fetch(`https://www.omdbapi.com/?i=${item.imdbID}&apikey=4ccd412e`)
                 .then(res => res.json())
                 .then(data =>{
                     const {Poster, Title, imdbRating, Runtime, Genre, Plot, imdbID} = data

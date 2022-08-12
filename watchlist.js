@@ -13,7 +13,7 @@ function renderMovies(){
     const arrSaved = getMoviesArray()
     if (arrSaved.length > 0){
             for (let item of arrSaved){
-            fetch(`http://www.omdbapi.com/?i=${item.firstItem}&apikey=4ccd412e`)
+            fetch(`https://www.omdbapi.com/?i=${item.firstItem}&apikey=4ccd412e`)
                 .then(res => res.json())
                 .then(data =>{
                     const {Poster, Title, imdbRating, Runtime, Genre, Plot, imdbID} = data
